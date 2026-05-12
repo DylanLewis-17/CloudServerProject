@@ -7,9 +7,9 @@
 
 ## Project Includes:
 
-Documentation of website creation process.
-Scripts.
-Links to both the created website and video explainer.
+Documentation of website creation process.<br>
+Scripts.<br>
+Links to both the created website and video explainer.<br>
 
 
 
