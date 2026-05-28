@@ -1,4 +1,4 @@
-# Cloud Server Project
+# ICT171 - Cloud Server Project
 
 #### Student Name: Dylan Lewis
 #### Student ID: 35856599
@@ -23,8 +23,10 @@ Week 2: Installed Apache, created project outline and selected/obtained licensin
 
 Week 3: Obtained DNS and SSL/TLS.<br>
 
-Week 3.5/4: Started Github, begun documentation.<br>
+Week 3.5: Started Github, begun documentation.<br>
 
-Week 4/5: Continued documentationand the creation of website and video explainer.<br>
+Week 4: Installed Wordpress, selected template, modified/updated template
+
+Week 5: Continued documentation and the video explainer.<br>
 
 
