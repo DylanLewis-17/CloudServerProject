@@ -49,9 +49,11 @@ Then Copy the text below and paste into powershell/terminal.
 Running the commands below, will install Apache2 on your web server.
 To check that it is installed, you can copy your ip address into a browser, which should bring up the apache2 default page.
 
-```sudo apt update
+```
+sudo apt update
 sudo apt upgrade
-sudo apt install apache2```
+sudo apt install apache2
+```
 <img src="images/101655.png">
 
 ##Obtaining a DNS
@@ -68,30 +70,40 @@ Using sudo will enables you to have administrative access. Enabling you to perfo
 ### Step 1:
 Installing PHP and connecting PHP to apache and MySQL
 
-```sudo apt install php libapache2-mod-php php-mysql```
+```
+sudo apt install php libapache2-mod-php php-mysql
+```
 <img src="images/120958.png">
 
 ### Step 2:
 Install MySQL.
 
-```sudo apt install mysql-server```
+```
+sudo apt install mysql-server
+```
 <img src="images/121115.png">
 
 ### Step 3:
 Log in to MySQL, as root(admin) user.
 
-```sudo mysql -u root```
+```
+sudo mysql -u root
+```
 <img src="images/121210.png">
 
 ### Step 4:
 The following command will change access to root user, to now require a password.
 Make sure to select your own password, in place of the word 'password' below.
 
-```ALTER USER 'root'@'localhost' IDENTIFIED BY 'Password';```
+```
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Password';
+```
 
 To create a new user, use the same command as before, but instead of teh word "Alter: user, we use "create" user.
 
-```CREATE USER 'wp_user'@localhost IDENTIFIED BY 'Password';```
+```
+CREATE USER 'wp_user'@localhost IDENTIFIED BY 'Password';
+```
 
 Create a new user, as this is the user/password you will use for wordpress.
 
@@ -99,7 +111,9 @@ Create a new user, as this is the user/password you will use for wordpress.
 Create a new database, this is where wordpress will store its data.
 This example creates a database, named wordpress, however you can use any name of choice.
 
-```CREATE DATABASE wordpress;```
+```
+CREATE DATABASE wordpress;
+```
 
 ### Step 6:
 Grant priveleges to the user that you created earlier, to read, write and modify, in the database just created.
@@ -108,23 +122,35 @@ Grant priveleges to the user that you created earlier, to read, write and modify
 Exit MySQL, back to your ubuntu server by typing exit.
 Download the latest version of Wordpress using the following command/link.
 
-```cd /tmp
-wget https://wordpress.org/latest.tar.gz```
+```
+cd /tmp
+wget https://wordpress.org/latest.tar.gz
+```
 
 <img src="images/123420.png">
 
 ### Step 7:
 Extract wordpress.
 
-```tar -xvf latest.tar.gz```
+```
+tar -xvf latest.tar.gz
+```
 
 ### Step 8:
 Move the extracted directory, into /var/www/html This is the default document root for apache and will now enable you to access wordpress via your servers IP address.
 
-```sudo mv wordpress/ /var/www/html```
-```cd /var/www/html/```
-```cd wordpress/```
-```nano wp-config.php```
+```
+sudo mv wordpress/ /var/www/html
+```
+```
+cd /var/www/html/
+```
+```
+cd wordpress/
+```
+```
+nano wp-config.php
+```
 <img src="images/124220.png">
 
 ### Step 9:
@@ -148,7 +174,9 @@ Go back to your browser, now click to run the installation. You should now have 
 Fill out the details and you will now have installed wordpress.
 
 Restartm apache.
-```sudo systemctl restart apache2```
+```
+sudo systemctl restart apache2
+```
 
 ## Linking your DNS
 Before completing this step, make sure that you have checked that your DNS has linked to your IP address correctly, and that it is working.
@@ -158,9 +186,15 @@ in wordpress, on the left hand side, go to Swttings, general. You can now see 2 
 ## Obtaining SSL certificate
 ### Step 1:
 Install certbot. A free tool that automatically gets a free SSL certificate from Lets Encrypt
-```sudo apt-get update```
-```sudo apt install certbot python3-certbot-apache```
+```
+sudo apt-get update
+```
+```
+sudo apt install certbot python3-certbot-apache
+```
 <img src="images/150428.png">
 
 Then run the command. Certbot will then detect your domain and ask which domain to secure.
-```sudo certbot --apache```
+```
+sudo certbot --apache
+```
