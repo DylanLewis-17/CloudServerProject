@@ -7,7 +7,7 @@
 
 ### Website Link (https://beginnerguidetoarchery.info)
 
-### Video Explainer https://youtu.be/ymiuXnL40Ys
+### Video Explainer (https://youtu.be/ymiuXnL40Ys)
 
 ## Project Includes
 
