@@ -3,12 +3,12 @@
 ## Configuring EC2 instance
 ### Step 1:
 Create the name of your new instance.
-Following this, select Ubuntu, there are a range of useable tiers, each with their own specirfications and prices
+Following this, select Ubuntu, there are a range of useable tiers, each with their own specifications and prices
 (as shown when selecting tiers).
 <img src="images/214902.png">
  
 ### Step 2: 
-Create a key pair login. This is used to access your instance, securely. Save the key pair in a location it will not be lost as you will it.
+Create a key pair login. This is used to access your instance, securely. Save the key pair in a location where it will not be lost as you will it.
 <img src="images/214956.png">
 
 ### Step 3:
@@ -40,9 +40,9 @@ Go back to your instances. Select an instance and click on connect up the top of
 <img src="images/224635.png">
 
 ### Step 2:
-In powershell/terminal. Use cd to go to the directory that your key pair is located.
+In powershell/terminal. Use cd to go to the directory that your key pair is located,
 or for convinience type cd then drag the folder the keypair is located in, into powershell/terminal.
-Then Copy the text below and paste into powershell/terminal.
+Copy the text below and paste into powershell/terminal.
 <img src="images/224812.png">
 
 ## Installing apache2
@@ -56,14 +56,14 @@ sudo apt install apache2
 ```
 <img src="images/101655.png">
 
-##Obtaining a DNS
-There are a variety of platforms offering the services needed to obtain a DNS. 
+## Obtaining a DNS
+There are a variety of platforms offering the services to obtain a DNS. 
 For this example, NameCheap, was used.
-After creating an account, and obtaining a dns, go to advanced DNS.
-Enter your ip in the required column, this will link your new dns to your ip address.
+After creating an account, and obtaining a dns, go to advanced DNS in namecheap.
+Enter your ip in the required sections, this will link your new dns to your ip address.
 <img src="images/102735.png">
 
-##Installing PHP, MySQL and WordPress
+## Installing PHP, MySQL and WordPress
 Installing PHP and MySQL is necessary, as wordpress requires them installed, in order to function.
 Using sudo will enables you to have administrative access. Enabling you to perform the necessary steps below.
 
@@ -99,7 +99,7 @@ Make sure to select your own password, in place of the word 'password' below.
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'Password';
 ```
 
-To create a new user, use the same command as before, but instead of teh word "Alter: user, we use "create" user.
+To create a new user, use the same command as before, but instead of the word "Alter" user, we use "create" user.
 
 ```
 CREATE USER 'wp_user'@localhost IDENTIFIED BY 'Password';
@@ -158,7 +158,7 @@ Copy your IP address into your web browser, followed by /wordpress. ie, ipaddres
 This should show the followiung screenshot.
 <img src="images/124511.png">
 
-Fill in the details in the following table, the details will be the same as what you used in thecreation of your database.
+Fill in the details in the following table, the details will be the same as what you used in the creation of your database.
 <img src="images/130446.png">
 
 The following page will open, copy the text.
@@ -167,7 +167,7 @@ The following page will open, copy the text.
 Come back to powershell/terminal, and paste the copied text.
 <img src="images/130756.png">
 
-press ctrl + x, press y to save, then press enter.
+Press ctrl + x, press y to save, then press enter.
 
 Go back to your browser, now click to run the installation. You should now have the following page visible.
 <img src="images/131017.png">
@@ -180,7 +180,7 @@ sudo systemctl restart apache2
 
 ## Linking your DNS
 Before completing this step, make sure that you have checked that your DNS has linked to your IP address correctly, and that it is working.
-in wordpress, on the left hand side, go to Swttings, general. You can now see 2 address inputs. Change them both to match your DNS.
+in wordpress, on the left hand side, go to settings, general. You can now see 2 address inputs. Change them both to match your DNS.
 <img src="images/131527.png">
 
 ## Obtaining SSL certificate

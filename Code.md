@@ -47,7 +47,7 @@ I have 1 section, the arrow recommendations, which is a custom html block, of wh
     <div id="results" style="margin-top:20px;"></div>
 
 </div>
-## Javsscript
+## Javsscript <br>
 <script>
 
 document.getElementById("archeryForm").addEventListener("submit", function(event) {
