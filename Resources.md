@@ -5,3 +5,5 @@ Tech Raj. (2022 June 22). *Create and Host a Wordpress Website on AWS EC2 with y
 
 Used for assistance with certain parts of the code, in combination with my own prior knowledge.<br>
 W3Schools. (n.d.). *W3Schools Online Web Tutorials*. https://www.w3schools.com/
+
+Used WPForms Builder plugin on wordpress to enable the contact section to function.
