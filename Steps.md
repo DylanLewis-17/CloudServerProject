@@ -117,8 +117,11 @@ CREATE DATABASE wordpress;
 
 ### Step 6:
 Grant priveleges to the user that you created earlier, to read, write and modify, in the database just created.
+```
+GRANT ALL PRIVILEGES ON wp.* TO 'wp_user'@localhost;
+```
 
-### Step 6:
+### Step 7:
 Exit MySQL, back to your ubuntu server by typing exit.
 Download the latest version of Wordpress using the following command/link.
 

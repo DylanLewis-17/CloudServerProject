@@ -4,6 +4,7 @@ The entirity of my website was designed using wordpress, using their themes, and
 I have 1 section, the arrow recommendations, which is a custom html block, of which the code for is shared below.
 
 ## CSS
+```
 .archery-form input,
 .archery-form textarea {
     width: 100%;
@@ -26,8 +27,9 @@ I have 1 section, the arrow recommendations, which is a custom html block, of wh
 .archery-button:hover {
     background: white;
 }
-
+```
 ## HTML
+```
 <p>Enter your details for arrow specifications that will best suit your requirements.</p>
 
 <div class="archery-form">
@@ -47,7 +49,9 @@ I have 1 section, the arrow recommendations, which is a custom html block, of wh
     <div id="results" style="margin-top:20px;"></div>
 
 </div>
+```
 ## Javsscript <br>
+```
 <script>
 
 document.getElementById("archeryForm").addEventListener("submit", function(event) {
@@ -130,3 +134,4 @@ document.getElementById("archeryForm").addEventListener("submit", function(event
 });
 
 </script>
+```
